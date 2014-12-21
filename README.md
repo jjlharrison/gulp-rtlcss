@@ -1,4 +1,4 @@
-# gulp-multimarkdown
+# gulp-rtlcss
 
 [![MIT Licence][licence-image]][licence-url] [![NPM Version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][david-dm-image]][david-dm-url]
 
