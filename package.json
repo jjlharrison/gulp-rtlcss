@@ -1,0 +1,29 @@
+{
+  "name": "gulp-rltcss",
+  "version": "0.1.0",
+  "description": "Gulp plugin that uses RTLCSS to convert LTR CSS to RTL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": {
+    "name": "James Harrison",
+    "email": "james@jjlharrison.me.uk"
+  },
+  "license": "MIT",
+  "repository": "jjlharrison/gulp-rtlcss",
+  "keywords": [
+    "convert",
+    "css",
+    "gulpplugin",
+    "rtl"
+  ],
+  "dependencies": {
+    "gulp-util": "~3.0.1",
+    "rtlcss": "^1.4.2",
+    "through2": "~0.6.3"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
