@@ -14,11 +14,11 @@ $ npm install --save-dev gulp-rtlcss
 
 ```js
 var gulp = require('gulp');
-var markdown = require('gulp-multimarkdown');
+var rtlcss = require('gulp-rtlcss');
 
 gulp.task('default', function () {
-	return gulp.src('intro.md')
-		.pipe(mulmarkdown())
+	return gulp.src('styles.css')
+		.pipe(rtlcss())
 		.pipe(gulp.dest('dist'));
 });
 ```
