@@ -10,7 +10,7 @@
 $ npm install --save-dev gulp-rtlcss
 ```
 
-## Usage
+## Basic Usage
 
 ```js
 var gulp = require('gulp');
@@ -22,6 +22,13 @@ gulp.task('default', function () {
 		.pipe(gulp.dest('dist'));
 });
 ```
+## Configuration
+
+The plugin optionally accepts RTLCSS configuration either as an argument or with a file named `.rtlcssrc` or `.rtlcssrc.json`.
+
+See the [RTLCSS documentation](https://github.com/MohammadYounes/rtlcss) for more information about accepted configuration.
+
+## Example
 
 The below example will result in 2 copies of each stylesheet, one LTR stylesheet and one RTL stylesheet (with "-rtl" appended to the filename before the extension). The example uses autoprefixer, this is just an example of other CSS post-processing being used before rtlcss.
 
