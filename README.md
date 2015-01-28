@@ -23,6 +23,24 @@ gulp.task('default', function () {
 });
 ```
 
+The below example will result in 2 copies of each stylesheet, one LTR stylesheet and one RTL stylesheet (with "-rtl" appended to the filename before the extension). The example uses autoprefixer, this is just an example of other CSS post-processing being used before rtlcss.
+
+```js
+var gulp = require('gulp');
+var autoprefixer = require('gulp-autoprefixer');
+var rtlcss = require('gulp-rtlcss');
+var rename = require('gulp-rename');
+
+gulp.task('styles', function () {
+    return gulp.src(['/styles/*.css')
+        .pipe(autoprefixer(["last 2 versions", "> 1%"])) // Other post-processing.
+        .pipe(gulp.dest('dist')) // Output LTR stylesheets.
+        .pipe(rtlcss()) // Convert to RTL.
+        .pipe(rename({ suffix: '-rtl' })) // Append "-rtl" to the filename.
+        .pipe(gulp.dest('dist')); // Output RTL stylesheets.
+});
+```
+
 [david-dm-image]: http://img.shields.io/david/jjlharrison/gulp-rtlcss.svg?style=flat
 [david-dm-url]: https://david-dm.org/jjlharrison/gulp-rtlcss
 [npm-image]: http://img.shields.io/npm/v/gulp-rtlcss.svg?style=flat
