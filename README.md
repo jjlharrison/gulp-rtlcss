@@ -39,7 +39,7 @@ var rtlcss = require('gulp-rtlcss');
 var rename = require('gulp-rename');
 
 gulp.task('styles', function () {
-    return gulp.src(['/styles/*.css')
+    return gulp.src(['/styles/*.css'])
         .pipe(autoprefixer(["last 2 versions", "> 1%"])) // Other post-processing.
         .pipe(gulp.dest('dist')) // Output LTR stylesheets.
         .pipe(rtlcss()) // Convert to RTL.
