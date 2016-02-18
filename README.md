@@ -48,6 +48,16 @@ gulp.task('styles', function () {
 });
 ```
 
+## Change Log
+
+### 1.0.0 - 2016-02-18
+
+- [#6](https://github.com/jjlharrison/gulp-rtlcss/issues/6) Upgrade to RTLCSS 2.
+
+### 0.1.4 - 2015-01-28
+
+- [#2](https://github.com/jjlharrison/gulp-rtlcss/issues/2) Add support for RTLCSS configuration.
+
 [david-dm-image]: http://img.shields.io/david/jjlharrison/gulp-rtlcss.svg?style=flat
 [david-dm-url]: https://david-dm.org/jjlharrison/gulp-rtlcss
 [npm-image]: http://img.shields.io/npm/v/gulp-rtlcss.svg?style=flat
