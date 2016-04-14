@@ -12,6 +12,10 @@
                 return cb();
             }
 
+            if(!/.\.css$/.test(file.path)){
+                return cb();
+            }
+
             if (file.isStream()) {
                 this.emit('error', new gutil.PluginError('gulp-rtlcss', 'Streaming not supported'));
                 return cb();
