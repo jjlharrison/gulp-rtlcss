@@ -47,4 +47,26 @@
             contents: new Buffer(".pull-left {content: ' ';}")
         }));
     });
+
+    it('should honour rtlcss directives', function (cb) {
+        var stream = gulpRtlcss();
+
+        stream.on('data', function (file) {
+            assert.equal(file.contents.toString(), ".toRight {\n" +
+                                                   "  text-align: left;\n" +
+                                                   "}\n");
+            cb();
+        });
+
+        stream.write(new gutil.File({
+            path: 'styles.css',
+            contents: new Buffer(".toRight {\n" +
+                                 "  /*rtl:remove*/\n" +
+                                 "  direction: rtl;\n" +
+                                 "  \n" +
+                                 "  /*rtl:ignore*/\n" +
+                                 "  text-align: left;\n" +
+                                 "}\n")
+        }));
+    });
 })();
