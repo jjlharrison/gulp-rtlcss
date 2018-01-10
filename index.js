@@ -1,6 +1,6 @@
 (function(){
     "use strict";
-    var gutil = require('gulp-util'),
+    var PluginError = require('plugin-error'),
         through = require('through2'),
         rtlcss = require('rtlcss'),
         configLoader = require('rtlcss/lib/config-loader');
@@ -13,7 +13,7 @@
             }
 
             if (file.isStream()) {
-                this.emit('error', new gutil.PluginError('gulp-rtlcss', 'Streaming not supported'));
+                this.emit('error', new PluginError('gulp-rtlcss', 'Streaming not supported'));
                 return cb();
             }
 

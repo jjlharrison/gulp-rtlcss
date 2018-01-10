@@ -1,7 +1,7 @@
 (function() {
     'use strict';
     var assert = require('assert');
-    var gutil = require('gulp-util');
+    var Vinyl = require('vinyl');
     var gulpRtlcss = require('./index');
 
     it('should convert LTR CSS to RTL', function (cb) {
@@ -12,7 +12,7 @@
             cb();
         });
 
-        stream.write(new gutil.File({
+        stream.write(new Vinyl({
             path: 'styles.css',
             contents: new Buffer('.selector { float: left; /* comment */ }')
         }));
@@ -42,7 +42,7 @@
             cb();
         });
 
-        stream.write(new gutil.File({
+        stream.write(new Vinyl({
             path: 'styles.css',
             contents: new Buffer(".pull-left {content: ' ';}")
         }));
@@ -58,7 +58,7 @@
             cb();
         });
 
-        stream.write(new gutil.File({
+        stream.write(new Vinyl({
             path: 'styles.css',
             contents: new Buffer(".toRight {\n" +
                                  "  /*rtl:remove*/\n" +

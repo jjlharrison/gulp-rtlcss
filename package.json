@@ -19,11 +19,12 @@
     "rtl"
   ],
   "dependencies": {
-    "gulp-util": "~3.0.1",
+    "plugin-error": "^0.1.2",
     "rtlcss": "^2.0.0",
     "through2": "~0.6.3"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "vinyl": "^2.1.0"
   }
 }
