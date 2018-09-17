@@ -20,7 +20,7 @@
   ],
   "dependencies": {
     "plugin-error": "^0.1.2",
-    "rtlcss": "^2.2.1",
+    "rtlcss": "^2.4.0",
     "through2": "^2.0.3",
     "vinyl-sourcemaps-apply": "^0.2.1"
   },
