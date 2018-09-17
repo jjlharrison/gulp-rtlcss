@@ -14,7 +14,7 @@
 
         stream.write(new Vinyl({
             path: 'styles.css',
-            contents: new Buffer('.selector { float: left; /* comment */ }')
+            contents: Buffer.from('.selector { float: left; /* comment */ }')
         }));
     });
 
@@ -44,7 +44,7 @@
 
         stream.write(new Vinyl({
             path: 'styles.css',
-            contents: new Buffer(".pull-left {content: ' ';}")
+            contents: Buffer.from(".pull-left {content: ' ';}")
         }));
     });
 
@@ -60,7 +60,7 @@
 
         stream.write(new Vinyl({
             path: 'styles.css',
-            contents: new Buffer(".toRight {\n" +
+            contents: Buffer.from(".toRight {\n" +
                                  "  /*rtl:remove*/\n" +
                                  "  direction: rtl;\n" +
                                  "  \n" +
