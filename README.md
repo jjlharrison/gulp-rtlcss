@@ -1,6 +1,6 @@
 # gulp-rtlcss
 
-[![MIT Licence][licence-image]][licence-url] [![NPM Version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][david-dm-image]][david-dm-url]
+[![MIT Licence][licence-image]][licence-url] [![NPM Version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][david-dm-image]][david-dm-url] [![Language grade: JavaScript][lgtm-grade-image]][lgtm-url]
 
 [Gulp](http://gulpjs.com) plugin that uses [RTLCSS](https://github.com/MohammadYounes/rtlcss) to convert LTR CSS to RTL.
 
@@ -69,3 +69,5 @@ gulp.task('styles', function () {
 [travis-url]: https://travis-ci.org/jjlharrison/gulp-rtlcss
 [licence-image]: http://img.shields.io/npm/l/gulp-rtlcss.svg?style=flat
 [licence-url]: https://tldrlegal.com/license/mit-license
+[lgtm-grade-image]: https://img.shields.io/lgtm/grade/javascript/g/jjlharrison/gulp-rtlcss.svg?logo=lgtm&logoWidth=18
+[lgtm-url]: https://lgtm.com/projects/g/jjlharrison/gulp-rtlcss/context:javascript
