@@ -2,7 +2,7 @@
 
 [![MIT Licence][licence-image]][licence-url] [![NPM Version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][david-dm-image]][david-dm-url] [![Language grade: JavaScript][lgtm-grade-image]][lgtm-url]
 
-[Gulp](http://gulpjs.com) plugin that uses [RTLCSS](https://github.com/MohammadYounes/rtlcss) to convert LTR CSS to RTL.
+[Gulp](http://gulpjs.com) plugin that uses [RTLCSS](https://github.com/MohammadYounes/rtlcss) to convert LTR CSS to RTL and in reverse.
 
 ## Install
 
@@ -24,7 +24,7 @@ gulp.task('default', function () {
 ```
 ## Configuration
 
-The plugin optionally accepts RTLCSS configuration either as an argument or with a file named `.rtlcssrc` or `.rtlcssrc.json`.
+The plugin optionally accepts RTLCSS or LTRCSS configuration either as an argument or with a file named `.rtlcssrc` or `.rtlcssrc.json`.
 
 See the [RTLCSS documentation](https://github.com/MohammadYounes/rtlcss) for more information about accepted configuration.
 
