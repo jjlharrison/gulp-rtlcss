@@ -53,6 +53,10 @@ gulp.task('styles', function () {
 
 ## Change Log
 
+### 1.4.1 - 2020-03-10
+
+- Upgrade `lodash` to 4.17.14 to mitigate [CVE-2019-10744](https://github.com/advisories/GHSA-jf85-cpcp-j695).
+
 ### 1.4.0 - 2019-06-18
 
 - Upgrade `through2` to 2.0.5.
