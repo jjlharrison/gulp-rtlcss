@@ -53,6 +53,28 @@ gulp.task('styles', function () {
 
 ## Change Log
 
+### 1.4.1 - 2020-03-10
+
+- Upgrade `lodash` to 4.17.14 to mitigate [CVE-2019-10744](https://github.com/advisories/GHSA-jf85-cpcp-j695).
+
+### 1.4.0 - 2019-06-18
+
+- Upgrade `through2` to 2.0.5.
+
+### 1.3.0 - 2018-09-17
+
+- Upgrade to RTLCSS 2.4.0.
+- Upgrade `plugin-error` to 1.0.1.
+
+### 1.2.0 - 2018-03-18
+
+- Upgrade to RTLCSS 2.2.1.
+
+### 1.1.0 - 2018-01-10
+
+- Add support for `gulp-sourcemaps`.
+- Remove `gulp-util` in favour of `plugin-error`.
+
 ### 1.0.0 - 2016-02-18
 
 - [#6](https://github.com/jjlharrison/gulp-rtlcss/issues/6) Upgrade to RTLCSS 2.
