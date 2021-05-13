@@ -1,6 +1,6 @@
 {
   "name": "gulp-rtlcss",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Gulp plugin that uses RTLCSS to convert LTR CSS to RTL.",
   "main": "index.js",
   "scripts": {
