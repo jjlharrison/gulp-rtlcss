@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [2.0.0] - 2022-04-01
+
+- Upgrade to RTLCSS to 3.5.0
+
 ## [1.4.2] - 2021-05-13
 
 ### Security
